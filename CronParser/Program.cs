@@ -204,19 +204,19 @@ namespace CronParser
             }
             public void ValidateHourField()
             {
-                IsValid = true;
+                
             }
             public void ValidateDayOfMonthField()
             {
-                IsValid = true;
+                
             }
             public void ValidateMonthField()
             {
-                IsValid = true;
+                
             }
             public void ValidateDayOfWeekField()
             {
-                IsValid = true;
+                
             }
         }
     }

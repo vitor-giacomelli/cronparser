@@ -56,10 +56,45 @@ namespace Tests
             cronValues[2] = dayOfMonth;
             cronValues[3] = month;
             cronValues[4] = dayOfWeek;
+
+            // Act
             _cronValidator = new CronValidator(cronValues);
 
-            // Act, Assert
+            // Assert
             _cronValidator.IsValid.ShouldBeTrue();
+        }
+
+        private static IEnumerable<TestCaseData> CronValidator_InvalidMinuteDataSource()
+        {
+            return new[]
+            {
+                new TestCaseData("A", "0", "0", "0", "0"),
+                new TestCaseData("-", "0", "0", "0", "0"),
+                new TestCaseData("BOAT", "0", "0", "0", "0")
+            };
+        }
+
+        [TestCaseSource(nameof(CronValidator_InvalidMinuteDataSource))]
+        public void CronValidator_InvalidMinute_IsValidFalse(
+            string minute,
+            string hour,
+            string dayOfMonth,
+            string month,
+            string dayOfWeek)
+        {
+            // Arrange
+            string[] cronValues = new string[5];
+            cronValues[0] = minute;
+            cronValues[1] = hour;
+            cronValues[2] = dayOfMonth;
+            cronValues[3] = month;
+            cronValues[4] = dayOfWeek;
+
+            // Act
+            _cronValidator = new CronValidator(cronValues);
+
+            //Assert
+            _cronValidator.IsValid.ShouldBeFalse();
         }
     }
 }
