@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CronParser.Entities;
+using System;
 
 namespace CronParser
 {
@@ -141,13 +142,18 @@ namespace CronParser
         {
             try
             {
+                
                 var valueList = cronString.Split(' ');
+                CronValidator cron = new CronValidator();
                 if (valueList.Length != 5)
                 {
+                    cron.IsValid = false;
                     throw new InvalidCastException();
                 }
                 else
                 {
+                    cron = new CronValidator(valueList);
+                    cron.IsValid = true;
                     _valueList = valueList;
                     _minuteField = _valueList[0];
                     _hourField = _valueList[1];
@@ -162,8 +168,56 @@ namespace CronParser
                 Console.WriteLine("Invalid Cron lenght. Please enter five values separated by a single space.");
                 Console.ReadKey();
             }
+        }
 
+        public class CronValidator
+        {
+            public bool IsValid { get; set; }
+            public Cron CronValues{ get; set; }
+            public int MinuteField { get; set; }
 
+            public CronValidator()
+            {
+
+            }
+            public CronValidator(string[] values)
+            {
+                CronValues = new Cron(values[0], values[1], values[2], values[3], values[4]);
+                ValidateMinuteField();
+                ValidateHourField();
+                ValidateDayOfMonthField();
+                ValidateMonthField();
+                ValidateDayOfWeekField();
+            }
+
+            public void ValidateMinuteField()
+            {
+                if (CronValues.Minute == "*" || CronValues.Minute == "?")
+                    IsValid = true;
+                else
+                {
+                    int minuteField = 0;
+                    IsValid = int.TryParse(CronValues.Minute, out minuteField);
+                    MinuteField = minuteField;
+                }
+
+            }
+            public void ValidateHourField()
+            {
+                IsValid = true;
+            }
+            public void ValidateDayOfMonthField()
+            {
+                IsValid = true;
+            }
+            public void ValidateMonthField()
+            {
+                IsValid = true;
+            }
+            public void ValidateDayOfWeekField()
+            {
+                IsValid = true;
+            }
         }
     }
 }
