@@ -8,3 +8,4 @@ E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.Assembly
 E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.AssemblyInfo.cs
 E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.dll
 E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.pdb
+E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.csprojAssemblyReference.cache

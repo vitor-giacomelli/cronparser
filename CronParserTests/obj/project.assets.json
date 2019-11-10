@@ -1658,6 +1658,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "CronParser/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/CronParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CronParser.dll": {}
+        }
       }
     }
   },
@@ -5829,10 +5839,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "CronParser/1.0.0": {
+      "type": "project",
+      "path": "../CronParser/CronParser.csproj",
+      "msbuildProject": "../CronParser/CronParser.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "CronParser >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "NUnit3TestAdapter >= 3.11.0",
@@ -5872,7 +5888,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\VS\\projects\\cronparser\\CronParser\\CronParser.csproj": {
+              "projectPath": "E:\\VS\\projects\\cronparser\\CronParser\\CronParser.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

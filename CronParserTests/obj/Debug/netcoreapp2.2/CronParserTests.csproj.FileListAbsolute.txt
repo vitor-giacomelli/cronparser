@@ -12,3 +12,6 @@ E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTest
 E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.AssemblyInfo.cs
 E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.dll
 E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.pdb
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\CronParser.dll
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\CronParser.pdb
+E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.csproj.CopyComplete
