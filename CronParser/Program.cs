@@ -6,7 +6,7 @@ namespace CronParser
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }

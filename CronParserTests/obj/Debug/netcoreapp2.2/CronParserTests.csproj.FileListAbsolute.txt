@@ -1,0 +1,14 @@
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\CronParserTests.deps.json
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\CronParserTests.runtimeconfig.json
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\CronParserTests.runtimeconfig.dev.json
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\CronParserTests.dll
+E:\VS\projects\cronparser\CronParserTests\bin\Debug\netcoreapp2.2\CronParserTests.pdb
+E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.csprojAssemblyReference.cache
+E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.csproj.CoreCompileInputs.cache
+E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.AssemblyInfoInputs.cache
+E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.AssemblyInfo.cs
+E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.dll
+E:\VS\projects\cronparser\CronParserTests\obj\Debug\netcoreapp2.2\CronParserTests.pdb

@@ -1,0 +1,10 @@
+E:\VS\projects\cronparser\CronParser\bin\Debug\netcoreapp2.2\CronParser.deps.json
+E:\VS\projects\cronparser\CronParser\bin\Debug\netcoreapp2.2\CronParser.runtimeconfig.json
+E:\VS\projects\cronparser\CronParser\bin\Debug\netcoreapp2.2\CronParser.runtimeconfig.dev.json
+E:\VS\projects\cronparser\CronParser\bin\Debug\netcoreapp2.2\CronParser.dll
+E:\VS\projects\cronparser\CronParser\bin\Debug\netcoreapp2.2\CronParser.pdb
+E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.csproj.CoreCompileInputs.cache
+E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.AssemblyInfoInputs.cache
+E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.AssemblyInfo.cs
+E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.dll
+E:\VS\projects\cronparser\CronParser\obj\Debug\netcoreapp2.2\CronParser.pdb
