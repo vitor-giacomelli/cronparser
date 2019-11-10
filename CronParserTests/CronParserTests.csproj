@@ -13,4 +13,8 @@
     <PackageReference Include="Shouldly" Version="3.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CronParser\CronParser.csproj" />
+  </ItemGroup>
+
 </Project>
