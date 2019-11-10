@@ -60,6 +60,6 @@ Valid weekday names in english, separated by a single comma (no spaces). The cas
 
 i.e: 
 
-(monday,tuesday,fri,sun)
+monday,tuesday,fri,sun
 
-(Sun,Friday,Thu)
+Sun,Friday,Thu
