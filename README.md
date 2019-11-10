@@ -63,7 +63,7 @@ i.e:
 
 
 ## Day of Week
-Valid weekday names in english, separated by a single comma (no spaces). The case is irrelevant.
+Valid weekday names in english, separated by a single comma (no spaces), * or ?. The case is irrelevant.
 
 i.e: 
 
