@@ -17,6 +17,13 @@ day of week 3 5
 It considers either * or ? as all possible values.
 
 # Valid Input
+The input should be typed in the following order and format:
+
+minute hour day-of-month month day-of-week
+
+i.e.
+
+10 1-5 5-10 * mon,thu,sun
 
 ## Minute
 Valid Integer
