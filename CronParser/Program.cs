@@ -53,9 +53,79 @@ namespace CronParser
                 Console.Write("Day of Month {0,9:#,##0}", dayOfMonthFieldStart);
                 PrintFieldWithStartAndEnd(dayOfMonthFieldStart, dayOfMonthFieldEnd);
             }
-            
-            
+
+            if (_monthField == ("?") || _monthField == "*")
+            {
+                Console.Write("Month {0,16:#,##0}", 1);
+                PrintFieldWithStartAndEnd(1, 12);
+            }
+            else
+            {
+                var monthField = _monthField.Split('-');
+                int monthFieldStart = Convert.ToInt32(monthField[0]);
+                int monthFieldEnd = Convert.ToInt32(monthField[1]);
+                Console.Write("Month {0,16:#,##0}", monthFieldStart);
+                PrintFieldWithStartAndEnd(monthFieldStart, monthFieldEnd);
+            }
+
+            if (_dayOfWeekField == ("?") || _dayOfWeekField == "*")
+            {
+                Console.Write("Day of Week {0,9:#,##0}", 0);
+                PrintFieldWithStartAndEnd(0, 6);
+            }
+            else
+            {
+                var dayOfWeekField = _dayOfWeekField.Split(',');
+                Console.Write("Day of Week {0,9:#,##0}", string.Empty);
+                for (int i = 0; i < dayOfWeekField.Length; i++)
+                {
+                    PrintDayOfWeek(dayOfWeekField[i]);
+                }
+                BreakLine();
+            }
             Console.ReadKey();
+        }
+
+        private static void PrintDayOfWeek(string dayOfWeekField)
+        {
+            switch (dayOfWeekField.ToLower())
+            {
+                case "monday":
+                case "mon":
+                    Console.Write($"{1} ");
+                    break;
+                case "tuesday":
+                case "tue":
+                    Console.Write($"{2} ");
+                    break;
+                case "wednesday":
+                case "wed":
+                    Console.Write($"{3} ");
+                    break;
+                case "thursday":
+                case "thu":
+                    Console.Write($"{4} ");
+                    break;
+                case "friday":
+                case "fri":
+                    Console.Write($"{5} ");
+                    break;
+                case "saturday":
+                case "sat":
+                    Console.Write($"{6} ");
+                    break;
+                case "sunday":
+                case "sun":
+                    Console.Write($"{0} ");
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private static void BreakLine()
+        {
+            Console.Write("\n");
         }
 
         private static void PrintFieldWithStartAndEnd(int fieldStart, int fieldEnd)
@@ -64,7 +134,7 @@ namespace CronParser
             {
                 Console.Write($" {i}");
             }
-            Console.Write("\n");
+            BreakLine();
         }
 
         private static void ValidateCronString(string cronString)
