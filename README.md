@@ -14,7 +14,52 @@ Month 1 2 3 4 5 6 7 8 9 10 11 12
 
 day of week 3 5
 
+It considers either * or ? as all possible values.
+
 # Valid Input
 
 ## Minute
-Valid Integer, * or ?
+Valid Integer
+
+i.e: 
+
+10
+
+## Hour
+Valid integers separated by a single hyphen (no spaces), * or ?
+
+i.e: 
+
+1-5
+
+?
+
+## Day of Month
+Valid integers separated by a single hyphen (no spaces), * or ?
+
+i.e: 
+
+5-10
+
+?
+
+
+## Month
+Valid integers separated by a single hyphen (no spaces), * or ?
+
+i.e: 
+
+1-10
+
+?
+
+
+
+## Day of Week
+Valid weekday names in english, separated by a single comma (no spaces). The case is irrelevant.
+
+i.e: 
+
+(monday,tuesday,fri,sun)
+
+(Sun,Friday,Thu)
